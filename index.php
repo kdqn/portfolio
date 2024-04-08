@@ -3,10 +3,27 @@
 $data = [
     'pageTitle' => 'Cayden\'s Home Page',
     'header' => 'Cayden Odegard',
-    'maincontent' => [
-        'profileimage' => ''
-        // Add profile image (me in a suit at prom?)
-        
+    'nav' => [
+    [
+    'linktitle' => 'Home',
+    'linkname' => '/pages/index.php',
+    ],
+    [
+    'linktitle' => 'Projects',
+    'linkname' => '/pages/projects.php',
+    ],
+    [
+    'linktitle' => 'Resume',
+    'linkname' => '/pages/resume.php',
+    ],
+    [
+    'linktitle' => 'Experience',
+    'linkname' => '/pages/experience.php',
+    ],
+    [
+    'linktitle' => 'Contact',
+    'linkname' => '/pages/contact.php',
+    ]    
     ]
 
 ];

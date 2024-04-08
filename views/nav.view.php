@@ -22,7 +22,7 @@
   <?php
         for ($i = 0; $i < count($data['nav']); $i++) {
           echo "<li>";
-            echo "<a href=\"" . $data['nav'][$i]['linkname'] . "\"><h2 data-name=\"" . $data['nav'][$i]['linktitle'] . "\">" . $data['nav'][$i]['linktitle'] . "</h2></li></ul></a>";
+            echo "<a href=\"" . $data['nav'][$i]['linkname'] . "\"><h2 data-name=\"" . $data['nav'][$i]['linktitle'] . "\">" . $data['nav'][$i]['linktitle'] . "</h2></li></a>";
         }
 ?>
   </ul>

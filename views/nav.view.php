@@ -32,8 +32,8 @@
   </div>
 <div class="content">
       <div class="title">
-Fullscreen Overlay Navigation Bar</div>
+My website (in progress ofc) </div>
 <p>
-(Hamburger Menu-2)</p>
+oh hey there sunshine :D</p>
 </div>
 <!-- ///////////// -->

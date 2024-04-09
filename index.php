@@ -14,15 +14,15 @@ $data = [
     ],
     [
     'linktitle' => 'Resume',
-    'linkname' => '/pages/resume.php',
+    'linkname' => '/views/resume.php',
     ],
     [
     'linktitle' => 'Experience',
-    'linkname' => '/pages/experience.php',
+    'linkname' => '/views/experience.php',
     ],
     [
     'linktitle' => 'Contact',
-    'linkname' => '/pages/contact.php',
+    'linkname' => '/views/contact.php',
     ]    
     ]
 

@@ -3,7 +3,7 @@
     margin: 0;
     /* font: sans-serif; */
     font-family: sans-serif;
-	color: hotpink;
+	color: rgb(13, 50, 110);
   }
 
 a{
@@ -49,14 +49,14 @@ h2::before {
 	top: 0;
 	left: -20px;
 	background: var(--bgcolor);
-	height: 3rem;
+	height: 50%;
 	overflow: hidden;
 	transition: all 300ms ease;
 	padding-left: 20px;
 }
 h2:hover::before {
-	top: -3px;
-	left: 0px;
+	top: -4px;
+	left: 0px;	
 /* 	top half of text color */
 	color: cyan;
 }
@@ -75,7 +75,7 @@ h2::after {
 }
 h2:hover::after {
 	width: 120%;
-	outline: 1px solid rgb(2, 0, 36);
+	outline: 1px solid rgb(60, 60, 77);
 }
 
 /* //////////////////////////// */
@@ -163,11 +163,9 @@ h2:hover::after {
 	font-size: 20px;
 	cursor: pointer;
 
-	/* alr commente out */
-	/*color: #fff;*/
-  /*   background: linear-gradient(90deg, #f92c78, #4114a1); */
-	/* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
-   /* background: linear-gradient(-45deg, #e3eefe 0%, #efddfb 100%); */
+
+	/* nav menu button  gradient */
+	background: linear-gradient(375deg, #1cc7d0, #2ede98);
 
 
 	transition: all 0.3s ease-in-out;
@@ -205,11 +203,11 @@ h2:hover::after {
   }
   #active:checked + .menu-btn:before {
 	  transform: rotate(45deg);
-	border-color: #fff;
+	/* border-color: #fff; */
   }
   #active:checked + .menu-btn:after {
 	  transform: rotate(-45deg);
-	border-color: #fff;
+	/* border-color: #fff; */
   }
   .wrapper ul{
 	position: absolute;
@@ -226,10 +224,10 @@ h2:hover::after {
   }
   .wrapper ul li a{
 	text-decoration: none;
-	font-size: 30px;
+	font-size: 5rem;
 	font-weight: 500;
 	padding: 5px 30px;
-	color: #fff;
+	color: #ffffff;
 	border-radius: 50px;
 	position: absolute;
 	line-height: 50px;
@@ -242,7 +240,7 @@ h2:hover::after {
 	position: absolute;
 	content: "";
 	background: #fff;
-	 /*background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);*/
+	 /* background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0); */
 	/*background: linear-gradient(375deg, #1cc7d0, #2ede98);*/
 	width: 100%;
 	height: 100%;

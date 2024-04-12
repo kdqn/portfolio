@@ -1,41 +1,18 @@
 <?php
 
+include_once('views/nav.view.php');
 $data = [
-    'pageTitle' => 'Cayden\'s Home Page',
-    'header' => 'Cayden Odegard',
-    'nav' => [
-    [
-    'linktitle' => 'Home',
-    'linkname' => '/pages/index.php',
-    ],
-    [
-    'linktitle' => 'Projects',
-    'linkname' => '/pages/projects.php',
-    ],
-    [
-    'linktitle' => 'Resume',
-    'linkname' => '/views/resume.php',
-    ],
-    [
-    'linktitle' => 'Experience',
-    'linkname' => '/views/experience.php',
-    ],
-    [
-    'linktitle' => 'Contact',
-    'linkname' => '/views/contact.php',
-    ]    
-    ]
-
+    'pageTitle' => 'Cayden | Home',
+    'header' => 'IN PROGRESS - testing...',
 ];
-
-
-
-
 include_once('views/head.view.php');
 include_once('views/header.view.php');
-include_once('views/nav.view.php');
+
 
 ?>
+
+
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente, necessitatibus? Illum cumque cupiditate enim illo eum. Nam, blanditiis accusamus? Ipsa voluptatibus quos ullam minima ipsum sunt tenetur numquam, debitis provident.</p>
 
 
 <?php 

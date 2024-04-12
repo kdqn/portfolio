@@ -1,33 +1,37 @@
 *{
     padding: 0;
     margin: 0;
-    /* font: sans-serif; */
-    font-family: sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 	color: rgb(13, 50, 110);
   }
 
 a{
-    color: rgb(98, 121, 125);
+    color: rgb(0, 215, 253);
     text-decoration: none;
     font-weight: bold;
 	text-align: center;
 }
-
+h1{
+	top: 0;
+}
+.code {
+	color: #3cff00;
+	font-family: 'Courier New', Courier, monospace;
+}
 
   /* testing css */
 
 
-  /* :root {
-	--bgcolor: rgb(98, 95, 95);
-} */
 
+
+  
 body {
 	min-height: 100vh;
 	display: grid;
 	place-items: center;
 	background: var(--bgcolor);
-	color: white;
-	background-color: white;
+	color: rgb(255, 0, 0);
+	background-color: rgb(116, 116, 116);
 }
 ul {
 	list-style: none;
@@ -66,12 +70,13 @@ h2::after {
 	height: 4px;
 	width: 0;
 	position: absolute;
-	top: 50%;
+	top: 45%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%, -40%);
 /* stripe color	 */
-	background: rgb(68, 63, 63);
+	background: rgb(100, 99, 99);
 	transition: all 300ms ease;
+	border-radius: 200px;
 }
 h2:hover::after {
 	width: 120%;
@@ -125,7 +130,7 @@ h2:hover::after {
 
 /* test for hamburger menu */
 :root {
-	--bgcolor: rgb(0, 0, 0);
+	--bgcolor: rgb(22, 19, 19);
 }
 
 .wrapper{
@@ -135,7 +140,7 @@ h2:hover::after {
 	right: -100%; 
 	height: 100%;
 	width: 100%;
-	background: #000;
+	background: rgb(22, 19, 19);
 	/*background: linear-gradient(90deg, #f92c78, #4114a1);*/
 	/* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
    /* background: linear-gradient(-45deg, #e3eefe 0%, #efddfb 100%);*/
@@ -297,3 +302,163 @@ h2:hover::after {
 	transform: translateX(-100px);
   }
   
+
+
+
+
+  /* ///////////////// */
+
+
+  .section-header {
+	text-align: center;
+	margin: 0 auto;
+	padding: 40px 0;
+	font: 300 60px 'Oswald', sans-serif;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 6px;
+  }
+  
+  .contact-wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 0 auto;
+	padding: 20px;
+	position: relative;
+	max-width: 840px;
+  }
+  
+  /* Left contact page */
+  .form-horizontal {
+	/*float: left;*/
+	max-width: 400px;
+	font-family: 'Lato';
+	font-weight: 400;
+  }
+  
+  .form-control, 
+  textarea {
+	max-width: 400px;
+	background-color: #000;
+	color: #fff;
+	letter-spacing: 1px;
+  }
+  
+  .send-button {
+	margin-top: 15px;
+	height: 34px;
+	width: 400px;
+	overflow: hidden;
+	transition: all .2s ease-in-out;
+  }
+  
+  .alt-send-button {
+	width: 400px;
+	height: 34px;
+	transition: all .2s ease-in-out;
+  }
+  
+  .send-text {
+	display: block;
+	margin-top: 10px;
+	font: 700 12px 'Lato', sans-serif;
+	letter-spacing: 2px;
+  }
+  
+  .alt-send-button:hover {
+	transform: translate3d(0px, -29px, 0px);
+  }
+  
+  /* Begin Right Contact Page */
+  .direct-contact-container {
+	max-width: 400px;
+  }
+  
+  /* Location, Phone, Email Section */
+  .contact-list {
+	list-style-type: none;
+	margin-left: -30px;
+	padding-right: 20px;
+  }
+  
+  .list-item {
+	line-height: 4;
+	color: #aaa;
+  }
+  
+  .contact-text {
+	font: 300 18px 'Lato', sans-serif;
+	letter-spacing: 1.9px;
+	color: #bbb;
+  }
+  
+  .place {
+	margin-left: 62px;
+  }
+  
+  .phone {
+	margin-left: 56px;
+  }
+  
+  .gmail {
+	margin-left: 53px;
+  }
+  
+  .contact-text a {
+	color: #bbb;
+	text-decoration: none;
+	transition-duration: 0.2s;
+  }
+  
+  .contact-text a:hover {
+	color: #fff;
+	text-decoration: none;
+  }
+
+  
+  hr {
+	border-color: rgba(255,255,255,.6);
+  }
+  
+  /* Begin Media Queries*/
+  @media screen and (max-width: 850px) {
+	.contact-wrapper {
+	  display: flex;
+	  flex-direction: column;
+	}
+	.direct-contact-container, .form-horizontal {
+	  margin: 0 auto;
+	}  
+	
+	.direct-contact-container {
+	  margin-top: 60px;
+	  max-width: 300px;
+	}
+}
+@media screen and (max-width: 569px) {
+
+  .direct-contact-container, .form-wrapper {
+    float: none;
+    margin: 0 auto;
+  }  
+  .form-control, textarea {
+    
+    margin: 0 auto;
+  }
+ 
+  
+  .name, .email, textarea {
+    width: 280px;
+  } 
+  
+  .direct-contact-container {
+    margin-top: 60px;
+    max-width: 280px;
+  }  
+  @media screen and (max-width: 410px) {
+	.send-button {
+	  width: 99%;
+	}
+}
+}

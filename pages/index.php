@@ -1,2 +1,2 @@
 <?php
-die();
+include_once('../index.php');

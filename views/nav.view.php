@@ -6,7 +6,46 @@
           <a class="nav-item" href="contact.php">Contact Me</a>
           <a class="nav-item" target="" href="https://github.com/kdqn/portfolio">GitHub</a>
       </nav> -->
+<?php 
 
+$data = [
+  // 'pageTitle' => 'Cayden\'s Home Page',
+  // 'header' => 'IN PROGRESS - CONTENT ADDED SOON',
+  'nav' => [
+  [
+  'linktitle' => 'Home',
+  'linkname' => '/pages/index.php',
+  ],
+  [
+  'linktitle' => 'About',
+  'linkname' => '/pages/about.php',
+  ],
+  [
+  'linktitle' => 'Projects',
+  'linkname' => '/pages/projects.php',
+  ],
+  [
+  'linktitle' => 'Resume',
+  'linkname' => '/pages/resume.php',
+  ],
+  [
+  'linktitle' => 'Experience',
+  'linkname' => '/pages/experience.php',
+  ],
+  [
+  'linktitle' => 'Contact',
+  'linkname' => '/pages/contact.php',
+  ],
+  [
+  'linktitle' => 'Admin',
+  'linkname' => '/pages/admin.php',
+  ],
+  ]
+
+];
+
+
+?>
 
 
       <!-- test hamburger menu -->
@@ -30,10 +69,3 @@
 <!-- end that test -->
 <!-- /////////// -->
   </div>
-<div class="content">
-      <div class="title">
-My website (in progress ofc) </div>
-<p>
-oh hey there sunshine :D</p>
-</div>
-<!-- ///////////// -->

@@ -26,7 +26,7 @@ $data = [
   ],
   [
   'linktitle' => 'Resume',
-  'linkname' => '/pages/resume.php',
+  'linkname' => '/media/resume.pdf',
   ],
   [
   'linktitle' => 'Experience',
@@ -37,8 +37,8 @@ $data = [
   'linkname' => '/pages/contact.php',
   ],
   [
-  'linktitle' => 'Admin',
-  'linkname' => '/pages/admin.php',
+  'linktitle' => 'Login',
+  'linkname' => '/pages/login.php',
   ],
   ]
 
@@ -69,3 +69,17 @@ $data = [
 <!-- end that test -->
 <!-- /////////// -->
   </div>
+
+
+
+
+
+
+
+  <aside class="_social-links">
+	<ul class="_links-list">
+		<li class="_social-link"><a href="https://caydenodegard.com" target="_blank"><i class="fa-brands fa-twitter"></i>my website</a></li>
+		<li class="_social-link"><a href="https://github.com/kdqn/portfolio" target="_blank"><i class="fa-brands fa-github"></i>my github</a></li>
+		<li class="_social-link"><a href="mailto:cayden.odegard@gmail.com" target="_blank"><i class="fa-solid fa-at"></i>email me</a></li>
+	</ul>
+</aside>

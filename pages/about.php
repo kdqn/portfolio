@@ -1,16 +1,17 @@
 <?php
 
+require_once '../config.php';
+// rest of your code
 
 
 
-
-include_once('../views/nav.view.php');
+include_once(URL_ROOT .  'views/nav.view.php');
 $data = [
     'pageTitle' => 'Cayden | About Me',
     'header' => 'About Me',
 ];
-include_once('../views/head.view.php');
-include_once('../views/header.view.php');
+include_once(URL_ROOT .  'views/head.view.php');
+include_once(URL_ROOT .  'views/header.view.php');
 
 ?>
 
@@ -21,7 +22,7 @@ include_once('../views/header.view.php');
 
 
 <?php 
-include_once('../views/footer.view.php');
+include_once(URL_ROOT .  'views/footer.view.php');
 
 
 ?>

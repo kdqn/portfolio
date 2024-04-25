@@ -5,7 +5,7 @@
 
 
 
-include_once('../views/nav.view.php');
+include_once(URL_ROOT .  'views/nav.view.php');
 $data = [
     'pageTitle' => 'Cayden | Admin',
     'header' => 'IN PROGRESS - testing... CONTENT ADDED SOON',
@@ -15,17 +15,17 @@ if (isset($_SESSION['user'])){
 
 }
 else{
-    header('location: http://localhost:3000/login.php');
+    header('location:' . URL_ROOT .  'login.php');
 }
 
-include_once('../views/head.view.php');
-include_once('../views/header.view.php');
+include_once(URL_ROOT .  'views/head.view.php');
+include_once(URL_ROOT .  'views/header.view.php');
 
 ?>
 
 
 <?php 
-include_once('../views/footer.view.php');
+include_once(URL_ROOT .  'views/footer.view.php');
 
 
 ?>

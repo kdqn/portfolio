@@ -17,8 +17,8 @@ if (isset($_SESSION['user'])){
 }
 
 
-include_once('../views/head.view.php');
-include_once('../views/header.view.php');
+include_once(URL_ROOT .  'views/head.view.php');
+include_once(URL_ROOT .  'views/header.view.php');
 
 session_start();
 $_SESSION['cat'] = 'meowssers';
@@ -49,7 +49,7 @@ print_r($_SESSION)
         } ?>
 <h1>Welcome: <?php echo $_SESSION['user']; ?></h1>   
 <?php 
-include_once('../views/footer.view.php');
+include_once(URL_ROOT .  'views/footer.view.php');
 
 
 ?>

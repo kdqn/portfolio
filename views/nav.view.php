@@ -6,39 +6,45 @@
           <a class="nav-item" href="contact.php">Contact Me</a>
           <a class="nav-item" target="" href="https://github.com/kdqn/portfolio">GitHub</a>
       </nav> -->
-<?php 
+<?php  
+// $config = parse_ini_file('../config.ini', true);
+// define('URL_ROOT', $config['DEVELOPMENT']['root']);
+
 
 $data = [
   // 'pageTitle' => 'Cayden\'s Home Page',
   // 'header' => 'IN PROGRESS - CONTENT ADDED SOON',
+ 
+// Define the root URL of the site
+
   'nav' => [
   [
-  'linktitle' => 'Home',
-  'linkname' => '/pages/index.php',
+  'linktitle' => 'Home', 
+  'linkname' => URL_ROOT . 'pages/index.php'
   ],
   [
-  'linktitle' => 'About',
-  'linkname' => '/pages/about.php',
+  'linktitle' => 'About', 
+  'linkname' => URL_ROOT . 'pages/about.php'
   ],
   [
   'linktitle' => 'Projects',
-  'linkname' => '/pages/projects.php',
+  'linkname' => URL_ROOT . 'pages/projects.php',
   ],
   [
   'linktitle' => 'Resume',
-  'linkname' => '/media/resume.pdf',
+  'linkname' => URL_ROOT . 'media/resume.pdf',
   ],
   [
   'linktitle' => 'Experience',
-  'linkname' => '/pages/experience.php',
+  'linkname' => URL_ROOT . 'pages/experience.php',
   ],
   [
   'linktitle' => 'Contact',
-  'linkname' => '/pages/contact.php',
+  'linkname' => URL_ROOT . 'pages/contact.php',
   ],
   [
   'linktitle' => 'Login',
-  'linkname' => '/pages/login.php',
+  'linkname' => URL_ROOT . 'pages/login.php',
   ],
   ]
 

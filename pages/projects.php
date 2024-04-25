@@ -5,7 +5,7 @@
 
 
 
-include_once('../views/nav.view.php');
+include_once(URL_ROOT .  'views/nav.view.php');
 $data = [
     'pageTitle' => 'Cayden | Projects',
     'header' => 'My Current/Past Projects',
@@ -53,8 +53,8 @@ $data = [
 
 ],
 ];
-include_once('../views/head.view.php');
-include_once('../views/header.view.php');
+include_once(URL_ROOT .  'views/head.view.php');
+include_once(URL_ROOT .  'views/header.view.php');
 
 ?>
 <div class="projects">
@@ -70,7 +70,7 @@ include_once('../views/header.view.php');
 ?>
 </div>
 <?php 
-include_once('../views/footer.view.php');
+include_once(URL_ROOT .  'views/footer.view.php');
 
 
 ?>

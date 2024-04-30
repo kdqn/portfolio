@@ -5,7 +5,6 @@ $URL_BASE = $config[$environment]['root'];
 define('URL_ROOT', "$URL_BASE");
 define('APP_ROOT', dirname(__FILE__,2));
 include_once(APP_ROOT . '/services/database.controller.php');
-include_once('nav.view.php');
 
 //Pull database credentials from config.ini
 $user = $config[$environment]['user'];

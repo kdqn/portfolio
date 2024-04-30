@@ -37,6 +37,16 @@ table {
     z-index: 0;
     position: relative;
 } 
+.projects {
+    background-color: rgb(105, 158, 151);
+    padding: 20px;
+    margin: 40px;
+    width: 50%;
+    float: left;
+    border-radius: 50px;
+    z-index: 0;
+    position: relative;
+} 
 
 /* Footer CSS */
 footer {

@@ -26,8 +26,7 @@ catch(PDOException $e)
 if (isset($database))
 {
   $controller = new DatabaseController($database);
-  $controller->indexPage('About');
-  $controller->insertImage('../media/mypicture.png');
+  $controller->indexPage('Hangman');
   include_once(APP_ROOT . '/views/footer.view.php');
 }
 $conn = null;

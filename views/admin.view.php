@@ -2,7 +2,8 @@
 
 
 <body>  
-    <h3>Add New Project</h3>
+<br><br>    
+<h3>Add New Project</h3>
     <form action="../scripts/create.php" method="POST">
         <label for="page">Page:</label>
         <input type="text" id="page" name="page" required>

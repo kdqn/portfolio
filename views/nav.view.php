@@ -20,31 +20,31 @@ $data = [
   'nav' => [
   [
   'linktitle' => 'Home', 
-  'linkname' => URL_ROOT . 'pages/index.php'
+  'linkname' => URL_ROOT . 'index.php'
   ],
   [
   'linktitle' => 'About', 
-  'linkname' => URL_ROOT . 'pages/about.php'
+  'linkname' => URL_ROOT . 'about.php'
   ],
   [
   'linktitle' => 'Projects',
-  'linkname' => URL_ROOT . 'pages/projects.php',
+  'linkname' => URL_ROOT . 'projects.php',
   ],
   [
   'linktitle' => 'Resume',
-  'linkname' => URL_ROOT . 'media/resume.pdf',
+  'linkname' => URL_ROOT . '../media/resume.pdf',
   ],
   [
   'linktitle' => 'Experience',
-  'linkname' => URL_ROOT . 'pages/experience.php',
+  'linkname' => URL_ROOT . 'experience.php',
   ],
   [
   'linktitle' => 'Contact',
-  'linkname' => URL_ROOT . 'pages/contact.php',
+  'linkname' => URL_ROOT . 'contact.php',
   ],
   [
   'linktitle' => 'Login',
-  'linkname' => URL_ROOT . 'pages/login.php',
+  'linkname' => URL_ROOT . 'login.php',
   ],
   ]
 

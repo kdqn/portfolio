@@ -27,7 +27,7 @@ h1 {
 }
 
 /* Projects Section CSS */
-.projects {
+table {
     background-color: rgb(105, 158, 151);
     padding: 20px;
     margin: 40px;
@@ -338,7 +338,7 @@ input[type="checkbox"]{
 /* Profile Pic CSS */
 
 img {
-    --s: 280px; /* image size */
+    --s: 180px; /* image size */
     --b: 5px; /* border thickness */
     --c: rgb(231, 143, 27); /* border color */
     --f: 1; /* initial scale */

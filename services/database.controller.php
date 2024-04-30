@@ -24,12 +24,10 @@ class DatabaseController {
         return $pageQuery;
     }
 
-    public function insertImage(string $imagePath, $imageWidth, $imageHeight)
+    public function insertImage(string $imagePath)
     {
-        $width = $imageWidth;
-        $height = $imageHeight;
         $path = $imagePath;
-        include(APP_ROOT . '/views/image.viewer.php');
+        include(APP_ROOT . '/views/image.view.php');
     }
 
     public function createInfo(string $page, string $title, string $content, string $languages, string $link) : void

@@ -33,7 +33,6 @@
         </thead>
         <tbody>
         <?php
-        echo APP_ROOT;
             foreach ($data as $projects) 
             {
                 echo "<tr>";

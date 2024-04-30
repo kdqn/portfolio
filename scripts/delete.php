@@ -2,7 +2,7 @@
 session_start();
 if (!isset($_SESSION['user']))
 {
-	header('location: ../../pages/admin.php');
+	header('location: ../pages/admin.php');
 };
 
 $config = parse_ini_file('../config.ini', true);
@@ -38,12 +38,12 @@ if (isset($database))
   try
     {
         $controller->deleteInfo($_GET['id']);
-        header('location: ../../pages/admin.php');
+        header('location: ../pages/admin.php');
     }
     catch(PDOException $e)
     {
         echo "Entry Failed: " . $e->getMessage();
-        echo "<br><a href=\"../../pages/admin.php\">Admin Page</a>";
+        echo "<br><a href=\"../pages/admin.php\">Admin Page</a>";
     }
   }
   else

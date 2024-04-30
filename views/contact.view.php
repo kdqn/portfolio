@@ -1,5 +1,5 @@
 <div class="card">
-  <h2>Contact Us</h2>
+  <h3>Contact Us</h3>
   <div class="row">
     <div class="col">
       <div class="form-group">

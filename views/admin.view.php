@@ -2,7 +2,6 @@
 
 
 <body>  
-    <h1>Welcome to the Admin Page, <?php echo $_SESSION['user']?></h1>
     <h3>Add New Project</h3>
     <form action="../scripts/create.php" method="POST">
         <label for="page">Page:</label>

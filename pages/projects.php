@@ -26,7 +26,9 @@ catch(PDOException $e)
 if (isset($database))
 {
   $controller = new DatabaseController($database);
+  echo "<div class=projects>";
   $controller->indexPage('Projects');
+  echo "</div>";
   include_once(APP_ROOT . '/views/footer.view.php');
 
 }

@@ -1,4 +1,8 @@
+<?php /*include_once(APP_ROOT . '/views/nav.view.php')*/?>
+
+
 <body>  
+    <h1>Welcome to the Admin Page, <?php echo $_SESSION['user']?></h1>
     <h3>Add New Project</h3>
     <form action="../scripts/create.php" method="POST">
         <label for="page">Page:</label>
@@ -24,21 +28,21 @@
                 <th>Content</th>
                 <th>Languages</th>
                 <th>Link</th>
-                <th>Alter</th>
+                <th>Change</th>
             </tr>
         </thead>
         <tbody>
         <?php
-            foreach ($data as $record) 
+            foreach ($data as $projects) 
             {
                 echo "<tr>";
-                echo "<td>{$record['id']}</td>";
-                echo "<td>{$record['page']}</td>";
-                echo "<td>{$record['title']}</td>";
-                echo "<td>{$record['content']}</td>";
-                echo "<td>{$record['languages']}</td>";
-                echo "<td>{$record['link']}</td>";
-                echo "<td><a href='../scripts/edit.php?id={$record['id']}'>Edit</a> | <a href='../scripts/delete.php?id={$record['id']}' onclick='return confirm(\"Are you sure you want to delete this project?\");'>Delete</a></td>";
+                echo "<td>{$projects['id']}</td>";
+                echo "<td>{$projects['page']}</td>";
+                echo "<td>{$projects['title']}</td>";
+                echo "<td>{$projects['content']}</td>";
+                echo "<td>{$projects['languages']}</td>";
+                echo "<td>{$projects['link']}</td>";
+                echo "<td><a href='../scripts/edit.php?id={$projects['id']}'>Edit</a> | <a href='../scripts/delete.php?id={$projects['id']}' onclick='return confirm(\"Are you sure you want to delete this project?\");'>Delete</a></td>";
                 echo "</tr>";
             }
         ?>

@@ -1,2 +1,2 @@
 <?php
-include_once(URL_ROOT .  'index.php');
+include_once('../index.php');

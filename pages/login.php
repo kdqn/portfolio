@@ -1,55 +1,53 @@
 <?php
+session_start();
 
-
-
-
-
-
-include_once('../views/nav.view.php');
-$data = [
-    'pageTitle' => 'Cayden | Login',
-    'header' => 'Admin login',
-];
-
-
-if (isset($_SESSION['user'])){
-    header('location: http://localhost:3000/admin.php');
+if (isset($_SESSION['user']))
+{
+	header('location: admin.php') ;
 }
 
+$config = parse_ini_file('../config.ini', true);
+$environment = $config['ENVIRONMENT'];
+$URL_BASE = $config[$environment]['root'];
+define('URL_ROOT', "$URL_BASE");
+define('APP_ROOT', dirname(__FILE__,2));
+include_once(APP_ROOT . '/services/database.controller.php');
 
-include_once(URL_ROOT .  'views/head.view.php');
-include_once(URL_ROOT .  'views/header.view.php');
+//Pull database credentials from config.ini
+$user = $config[$environment]['user'];
+$pass = $config[$environment]['pass'];
+$host = $config[$environment]['host'];
+$name = $config[$environment]['name'];
 
-session_start();
-$_SESSION['cat'] = 'meowssers';
-print_r($_SESSION)
+try
+{
+	$conn = new PDO("mysql:host=$host;dbname=$name", $user, $pass);
+	$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+	$database = new DatabaseService($conn);
+} 
+catch(PDOException $e)
+{
+	echo "Connection failed: " . $e->getMessage();
+}
 
-?>
+if (isset($database))
+{
+	$Password_Notice = '';
+	$controller = new DatabaseController($database);
+	$controller->indexPage('Login');
+	include_once(APP_ROOT . '/views/login.view.php');
 
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title> -->
-
-
-
-    <form action="" method="post">
-        <label for="username">Username: </label>
-        <input type="text" name = "username" id="username">
-        <label for="password">password: </label>
-        <input type="password" name = "password" id="username">
-        <input type="submit" value="Login!">
-
-    </form>
-
-    <?php if(isset($_POST['username'])){
-        $_SESSION['user'] = $_POST['username']; 
-        } ?>
-<h1>Welcome: <?php echo $_SESSION['user']; ?></h1>   
-<?php 
-include_once(URL_ROOT .  'views/footer.view.php');
-
-
-?>
+	if (isset($_POST['username']))
+	{
+		if ($controller->validateLogin($_POST['username'], $_POST['password']) == true)
+		{
+			$_SESSION['user']=$_POST['username'];
+			header('location: admin.php');
+		}
+		else
+		{
+			echo "<script>alert('Incorrect username and/or password');</script>";
+		}
+	}
+}
+$conn = null;

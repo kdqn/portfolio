@@ -2,7 +2,7 @@
 
 
 
-
+require_once '../config.php';
 
 include_once('../views/nav.view.php');
 $data = [

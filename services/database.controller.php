@@ -12,7 +12,7 @@ class DatabaseController {
     {
         $data = $this->userModel->fetchSpecificPageInfo($pageName);
         include_once(APP_ROOT . '/views/head.view.php');
-        // foreach($data as $article)
+        foreach($data as $article)
         {
             include(APP_ROOT . '/views/main.view.php');
         }

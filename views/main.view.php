@@ -1,3 +1,6 @@
+
+
+
 <h3><?php echo (isset($article['title'])) ? $article['title'] : null; ?></h3>
 <p><?php echo (isset($article['content'])) ? $article['content'] : null;?></p>
 <p><?php echo (isset($article['languages'])) ? $article['languages'] : null;?></p>

@@ -11,7 +11,7 @@
 // define('URL_ROOT', $config['DEVELOPMENT']['root']);
 
 
-$data = [
+$nav = [
   // 'pageTitle' => 'Cayden\'s Home Page',
   // 'header' => 'IN PROGRESS - CONTENT ADDED SOON',
  
@@ -65,9 +65,9 @@ $data = [
 
   <ul class="wrapper">
   <?php
-        for ($i = 0; $i < count($data['nav']); $i++) {
+        for ($i = 0; $i < count($nav['nav']); $i++) {
           echo "<li>";
-            echo "<a href=\"" . $data['nav'][$i]['linkname'] . "\"><h2 data-name=\"" . $data['nav'][$i]['linktitle'] . "\">" . $data['nav'][$i]['linktitle'] . "</h2></li></a>";
+            echo "<a href=\"" . $nav['nav'][$i]['linkname'] . "\"><h2 data-name=\"" . $nav['nav'][$i]['linktitle'] . "\">" . $nav['nav'][$i]['linktitle'] . "</h2></li></a>";
         }
 ?>
   </ul>

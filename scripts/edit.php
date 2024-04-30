@@ -45,12 +45,12 @@ if (isset($database))
         try
         {
             $article = $controller->getArticleByID($_GET['id']);
-            include_once(APP_ROOT . '../views/edit.view.php');
+            include_once(APP_ROOT . '/views/edit.view.php');
         }
         catch(PDOException $e)
         {
             echo "Entry Failed: " . $e->getMessage();
-            echo "<br><a href=\"../pages/admin.php\">Admin Page</a>";
+            echo "<br><a href=\"/pages/admin.php\">Admin Page</a>";
         }
     }
   }

@@ -24,11 +24,11 @@ $data = [
   ],
   [
   'linktitle' => 'About', 
-  'linkname' => URL_ROOT . 'about.php'
+  'linkname' => URL_ROOT . 'pages/about.php'
   ],
   [
   'linktitle' => 'Projects',
-  'linkname' => URL_ROOT . 'projects.php',
+  'linkname' => URL_ROOT . 'pages/projects.php',
   ],
   [
   'linktitle' => 'Resume',
@@ -36,15 +36,15 @@ $data = [
   ],
   [
   'linktitle' => 'Experience',
-  'linkname' => URL_ROOT . 'experience.php',
+  'linkname' => URL_ROOT . 'pages/experience.php',
   ],
   [
   'linktitle' => 'Contact',
-  'linkname' => URL_ROOT . 'contact.php',
+  'linkname' => URL_ROOT . 'pages/contact.php',
   ],
   [
   'linktitle' => 'Login',
-  'linkname' => URL_ROOT . 'login.php',
+  'linkname' => URL_ROOT . 'pages/login.php',
   ],
   ]
 

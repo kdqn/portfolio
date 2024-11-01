@@ -41,6 +41,9 @@ table {
 th, td{
     padding: 15px;
 }
+table,th, td{
+    border-collapse: collapse;
+}
 
 
 /* Footer CSS */

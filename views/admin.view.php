@@ -7,7 +7,6 @@
         <select id="page" name="page" required>
             <option value="home">Home</option>
             <option value="about">About</option>
-            <option value="services">Services</option>
             <option value="projects">Projects</option>
             <option value="contact">Contact</option>
             <!-- Add more options here as needed -->
@@ -29,7 +28,13 @@
         <label for="filter">Filter:</label>
         <select id="filter" name="filter">
             <option value="all">All Projects</option>
-            <option value="projects">Projects Only</option>
+            <?php
+                // Dynamically populate the dropdown options based on the available pages
+                $pages = array_unique(array_column($data, 'page'));
+                foreach ($pages as $page) {
+                    echo "<option value='{$page}'>{$page}</option>";
+                }
+            ?>
         </select>
         <button type="submit">Apply Filter</button>
     </form>
@@ -50,7 +55,7 @@
             $filter = $_POST['filter'] ?? 'all';
             foreach ($data as $projects) 
             {
-                if ($filter == 'all' || ($filter == 'projects' && $projects['title'] == 'projects')) {
+                if ($filter == 'all' || ($filter == $projects['page'])) {
                     echo "<tr>";
                     echo "<td>{$projects['id']}</td>";
                     echo "<td>{$projects['page']}</td>";

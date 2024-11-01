@@ -3,7 +3,16 @@
 <h3>Add New Project</h3>
     <form action="../scripts/create.php" method="POST">
         <label for="page">Page:</label>
-        <input type="text" id="page" name="page" required>
+        <!-- <input type="text" id="page" name="page" required> -->
+        <select id="page" name="page" required>
+            <option value="home">Home</option>
+            <option value="about">About</option>
+            <option value="services">Services</option>
+            <option value="projects">Projects</option>
+            <option value="contact">Contact</option>
+            <!-- Add more options here as needed -->
+        </select>
+
         <label for="title">Title:</label>
         <input type="title" id="title" name="title">
         <label for="languages">Languages:</label>

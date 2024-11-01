@@ -5,10 +5,10 @@
         <label for="page">Page:</label>
         <!-- <input type="text" id="page" name="page" required> -->
         <select id="page" name="page" required>
-            <option value="home">Home</option>
-            <option value="about">About</option>
-            <option value="projects">Projects</option>
-            <option value="contact">Contact</option>
+            <option value="Home">Home</option>
+            <option value="About">About</option>
+            <option value="Projects">Projects</option>
+            <option value="Contact">Contact</option>
             <!-- Add more options here as needed -->
         </select>
 

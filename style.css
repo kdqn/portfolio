@@ -1,89 +1,101 @@
+:root {
+    /* Color Variables */
+    --black: rgb(0, 0, 0);
+    --primary-color: rgb(231, 143, 27);
+    --secondary-color: rgb(105, 158, 151);
+    --white: rgb(255, 255, 255);
+    --text-gray: rgb(128, 128, 128);
+    --hover-highlight: rgb(27, 231, 221);
+
+    /* Font and Text Variables */
+    --font-main: Verdana, Geneva, Tahoma, sans-serif;
+    --font-code: 'Courier New', Courier, monospace;
+    --font-size-large: 5rem;
+    --font-size-medium: 2rem;
+    --font-size-small: 1.5rem;
+    --font-weight-bold: bold;
+
+    /* Layout and Spacing */
+    --padding-large: 30px;
+    --padding-medium: 20px;
+    --padding-small: 15px;
+    --margin-large: 40px;
+    --border-radius: 50px;
+    --border-width: 5px;
+}
+
 /* General CSS */
 * {
     padding: 0;
     margin: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(0, 0, 0);
-    --accentcolor: rgb(231, 143, 27);
+    font-family: var(--font-main);
+    color: var(--black);
 }
 
 a {
-    color: rgb(231, 143, 27);
+    color: var(--primary-color);
     text-decoration: none;
-    font-weight: bold;
+    font-weight: var(--font-weight-bold);
     text-align: center;
 }
 
 h1 {
-    top: 0;    
-    color: rgb(0, 0, 0);
+    top: 0;
+    color: var(--black);
 }
-
 
 /* Code Section CSS */
 .code {
-    color: rgb(231, 143, 27);
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
+    color: var(--primary-color);
+    font-family: var(--font-code);
+    font-weight: var(--font-weight-bold);
     font-size: 20px;
 }
 
 /* Projects Section CSS */
 table {
-    background-color: rgb(105, 158, 151);
-    padding: 20px;
-    margin: 40px;
+    background-color: var(--secondary-color);
+    padding: var(--padding-medium);
+    margin: var(--margin-large);
     width: 50%;
     float: left;
-    border-radius: 50px;
+    border-radius: var(--border-radius);
     z-index: 0;
     position: relative;
-} 
-th, td{
-    padding: 15px;
 }
-table,th, td{
+th, td {
+    padding: var(--padding-small);
+}
+table, th, td {
     border-collapse: collapse;
 }
-
 
 /* Footer CSS */
 footer {
     height: 60px;
     width: 100%;
     bottom: 0;
-    margin-bottom: 0;
     padding-bottom: 0;
     text-align: center;
-    display: block;
-    background-color: rgb(105, 158, 151);
+    background-color: var(--secondary-color);
     position: fixed;
-    margin-top: 30px;
     z-index: 0;
-
 }
 
 /* Div CSS */
 div {
     transition: box-shadow 0.3s ease;
-    margin-left: 30px;
+    margin-left: var(--padding-large);
 }
-
-/* div:hover {
-    box-shadow: 0px 0px 10px 5px rgb(231, 143, 27);
-} */
-
 
 /* Body CSS */
 body {
     min-height: 100vh;
     display: grid;
     place-items: center;
-    background: var(--bgcolor);
-    color: rgb(128, 128, 128);
-    background-color: rgb(168, 164, 164);
     background: linear-gradient(360deg, #1cc7d0, #2ede98);
-    margin-left: 30px;
+    color: var(--text-gray);
+    margin-left: var(--padding-large);
 }
 
 /* List CSS */
@@ -93,13 +105,13 @@ ul {
 
 /* H2 CSS */
 h2 {
-    font-size: 5rem;
+    font-size: var(--font-size-large);
     position: relative;
     text-transform: uppercase;
     transition: all 300ms ease;
     width: fit-content;
     cursor: pointer;
-    color: rgb(255, 255, 255);
+    color: var(--white);
 }
 
 h2:hover {
@@ -111,7 +123,7 @@ h2::before {
     position: absolute;
     top: 0;
     left: -20px;
-    background: var(--bgcolor);
+    background: var(--black);
     height: 50%;
     overflow: hidden;
     transition: all 300ms ease;
@@ -120,7 +132,7 @@ h2::before {
 
 h2:hover::before {
     top: -4px;
-    left: 0px;    
+    left: 0px;
     color: cyan;
 }
 
@@ -132,7 +144,7 @@ h2::after {
     top: 45%;
     left: 50%;
     transform: translate(-50%, -40%);
-    background: rgb(231, 143, 27);
+    background: var(--primary-color);
     transition: all 300ms ease;
     border-radius: 200px;
 }
@@ -147,17 +159,17 @@ h2:hover::after {
     position: fixed;
     right: 0;
     top: 50%;
-    transform: translatey(-50%);
+    transform: translateY(-50%);
     padding: 1em 0.5em 1em 1em;
     background: #fafafa;
     border-radius: 0.5em 0 0 0.5em;
-    box-shadow: -4px 0px 0px rgb(231, 143, 27);
+    box-shadow: -4px 0px 0px var(--primary-color);
     transition: all 300ms ease;
     z-index: 0;
 }
 
 ._social-links:hover {
-    box-shadow: -8px 0px 20px rgb(46, 173, 167);
+    box-shadow: -8px 0px 20px var(--hover-highlight);
     padding: 1em;
 }
 
@@ -169,41 +181,33 @@ h2:hover::after {
 }
 
 ._social-link a {
-    color: #000000;
-    font-size: 1.5rem;
+    color: var(--black);
+    font-size: var(--font-size-small);
     transition: all 200ms ease;
 }
 
 ._social-link a:visited {
-    color: rgb(0, 0, 0);
+    color: var(--black);
 }
 
 ._social-link a:hover {
-    color: rgb(231, 143, 27);
+    color: var(--primary-color);
     font-size: 1.75rem;
 }
 
 /* Hamburger Menu CSS */
-:root {
-    --bgcolor: rgb(0, 0, 0);
-}
-
-.wrapper{
+.wrapper {
     position: fixed;
     top: 0;
-    right: -100%; 
+    right: -100%;
     height: 100%;
     width: 100%;
-    background: rgb(0, 0, 0);
+    background: var(--black);
     z-index: 1;
     transition: all 0.6s ease-in-out;
 }
 
-#active:checked ~ .wrapper{
-    right:0;
-}
-
-.menu-btn{
+.menu-btn {
     position: absolute;
     z-index: 2;
     right: 20px;
@@ -215,304 +219,52 @@ h2:hover::after {
     border-radius: 50%;
     font-size: 20px;
     cursor: pointer;
-    background:#2ede98;
+    background: #2ede98;
     transition: all 0.3s ease-in-out;
 }
 
-.menu-btn span,
-.menu-btn:before,
-.menu-btn:after{
-    content: "";
-    position: absolute;
-    top: calc(50% - 1px);
-    left: 30%;
-    width: 40%;
-    border-bottom: 2px solid #000;
-    transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
-}
-
-.menu-btn:before{
-    transform: translateY(-8px);
-}
-
-.menu-btn:after{
-    transform: translateY(8px);
-}
-
-.close {
-    z-index: 2;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    transition: background .6s;
-}
-
-#active:checked + .menu-btn span {
-    transform: scaleX(0);
-}
-
-#active:checked + .menu-btn:before {
-    transform: rotate(45deg);
-}
-
-#active:checked + .menu-btn:after {
-    transform: rotate(-45deg);
-}
-
-.wrapper ul{
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    height: 90%;
-    transform: translate(-50%, -50%);
-    list-style: none;
-    text-align: center;
-}
-
-.wrapper ul li{
-    height: 10%;
-    margin: 15px 0;
-}
-
-.wrapper ul li a{
-    text-decoration: none;
-    font-size: 5rem;
-    font-weight: 500;
-    padding: 5px 30px;
-    color: #ffffff;
-    border-radius: 50px;
-    position: absolute;
-    line-height: 50px;
-    margin: 5px 30px;
-    opacity: 0;
-    transition: all 0.3s ease;
-    transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
-}
-
-.wrapper ul li a:after{
-    position: absolute;
-    content: "";
-    background: #fff;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    border-radius: 50px;
-    transform: scaleY(0);
-    z-index: 0;
-    transition: transform 0.3s ease;
-}
-
-input[type="checkbox"]{
-    display: none;
-}
-
-.content{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 0;
-    text-align: center;
-    width: 100%;
-    color: #202020;
-}
-
-.content .title{
-    font-size: 40px;
-    font-weight: 700;
-}
-
-.content p{
-    font-size: 35px;
-    font-weight: 600;
-}
-
-#active:checked ~ .wrapper ul li a{
-    opacity: 1;
-}
-
-.wrapper ul li a{
-    transition: opacity 1.2s, transform 1.2s cubic-bezier(0.215, 0.61, 0.355, 1);
-    transform: translateX(100px);
-}
-
-#active:checked ~ .wrapper ul li a{
-    transform: none;
-    transition-timing-function: ease, cubic-bezier(.1,1.3,.3,1); 
-    transition-delay: .6s;
-    transform: translateX(-100px);
-}
-
-
-
 /* Profile Pic CSS */
-
 img {
-    --s: 180px; /* image size */
-    --b: 5px; /* border thickness */
-    --c: rgb(231, 143, 27); /* border color */
-    --f: 1; /* initial scale */
-  
-    --_g: 50% / calc(100% / var(--f)) 100% no-repeat content-box;
-    --_o: calc((1 / var(--f) - 1) * var(--s) / 2 - var(--b));
-  
+    --s: 180px;
+    --b: var(--border-width);
+    --c: var(--primary-color);
+    --f: 1;
+
     width: var(--s);
     aspect-ratio: 1;
-    padding-top: calc(var(--s)/5);
+    padding-top: calc(var(--s) / 5);
     cursor: pointer;
     border-radius: 0 0 999px 999px;
     outline: var(--b) solid var(--c);
-    outline-offset: var(--_o);
-    background: 
-      radial-gradient(
-        circle closest-side,
-        #50bcc000 calc(99% - var(--b)),
-        var(--c) calc(100% - var(--b)) 99%,
-        #0000) var(--_g);
-    mask:
-      linear-gradient(#000 0 0) no-repeat
-      50% calc(-1 * var(--_o)) / calc(100% / var(--f) - 2 * var(--b)) 50%,
-      radial-gradient(
-        circle closest-side,
-        #000 99%,
-        #0000) var(--_g);
-    transform: scale(var(--f));
+    outline-offset: calc((1 / var(--f) - 1) * var(--s) / 2 - var(--b));
     transition: .5s;
-
-    /* Added properties */
     position: absolute;
     top: 0;
     left: 56px;
 }
 
 img:hover {
-    --f: 1.35; /* hover scale */
+    --f: 1.35;
 }
 
-  
-  
-  /* body {
-    margin: 0;
-    min-height: 100vh;
-    display: grid;
-    place-content: center;
-    background: #E0E4CC;
-  } */
-
-
-  /*contact page CSS*/
-
-  .card {
+/* Contact Page CSS */
+.card {
     width: 70%;
     padding: 30px 90px 90px 90px;
     border: 6px solid rgba(0, 0, 0, 0.3);
     box-shadow: 20px 20px 0 rgba(0, 0, 0, 0.3);
-    border-radius: 50px;
+    border-radius: var(--border-radius);
     position: relative;
-  }
-  
-  .card h3 {
+}
+
+.card h3 {
     color: rgba(0, 0, 0, 0.3);
     font-size: 60px;
     text-transform: uppercase;
-  }
-  
-  .card .row {
-    position: relative;
-    width: 100%;
+}
+
+.card .row {
     display: grid;
-    grid: auto / auto auto;
-    grid-template-columns: repeat(auto-fit,minmax(40%, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
     grid-gap: 30px;
-  }
-  
-  .card .row .col {
-    position: relative;
-    width: 100%;
-    margin: 30px 20px 40px 0;
-    transition: 0.5s;
-  }
-  
-  .card .row .form-group {
-    position: relative;
-    width: 100%;
-    height: 40px;
-    color: #ffffff;
-  }
-  
-  .card .row .form-group input,
-  .card .row .form-group textarea {
-    position: absolute;
-    width: 90%;
-    height: 100%;
-    background: transparent;
-    outline: none;
-    font-size: 24px;
-    padding: 10px 0 10px 20px;
-    border: 5px solid rgba(0, 0, 0, 0.3);
-    box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
-    color: #ffffff;
-    border-radius: 50px;
-  }
-  
-  .card .row .form-group label {
-    line-height: 40px;
-    color: #ffffff;
-    font-size: 24px;
-    margin: 0 0 0 30px;
-    display: block;
-    pointer-events: none;
-  }
-  
-  .row .col:nth-child(6) {
-    margin-top: 64px;
-  }
-  
-  .card .row .form-group input:focus,
-  .card .row .form-group textarea:focus {
-    border: 5px solid #ffffff;
-    transition: all 0.5s;
-  }
-  
-  .card .row input[type="submit"] {
-    border: 5px solid rgba(0, 0, 0, 0.3);
-    box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
-    padding: 10px;
-    height: 100%;
-    width: 50%;
-    cursor: pointer;
-    outline: none;
-    background: transparent;
-    text-transform: uppercase;
-    color: #ffffff;
-    line-height: 40px;
-    font-size: 24px;
-    font-weight: 700;
-    border-radius: 45px;
-    transition: all 0.4s;
-  }
-  
-  .card .row input[type="submit"]:hover {
-    border: 5px solid rgba(255, 255, 255, 1);
-    color: #ffffff;
-    transition: all 0.4s;
-  }
-  
-  @media screen and (max-width: 900px) {
-    .card .row {
-      grid-template-columns: repeat(auto-fit,minmax(70%, 1fr));
-    }
-    
-    .card {
-      padding: 40px;
-    }
-    
-    .card h2 {
-      font-size: 34px;
-    }
-    
-    .card .row input[type="submit"] {
-      width: 100%;
-    }
-  }
+}

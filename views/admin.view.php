@@ -27,7 +27,7 @@
     <form method="POST">
         <label for="filter">Filter:</label>
         <select id="filter" name="filter">
-            <option value="all">All Projects</option>
+            <option value="all">All Pages</option>
             <?php
                 // Dynamically populate the dropdown options based on the available pages
                 $pages = array_unique(array_column($data, 'page'));

@@ -4,7 +4,7 @@
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: rgb(0, 0, 0);
-    --accentcolor: rgb(0, 80, 230);
+    --accentcolor: rgb(231, 143, 27);
 }
 
 a {
@@ -151,13 +151,13 @@ h2:hover::after {
     padding: 1em 0.5em 1em 1em;
     background: #fafafa;
     border-radius: 0.5em 0 0 0.5em;
-    box-shadow: -4px 0px 0px var(--accentcolor);
+    box-shadow: -4px 0px 0px rgb(231, 143, 27);
     transition: all 300ms ease;
     z-index: 0;
 }
 
 ._social-links:hover {
-    box-shadow: -8px 0px 20px var(--accentcolor);
+    box-shadow: -8px 0px 20px rgb(46, 173, 167);
     padding: 1em;
 }
 

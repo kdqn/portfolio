@@ -84,8 +84,8 @@ $nav = [
 
   <aside class="_social-links">
 	<ul class="_links-list">
-		<li class="_social-link"><a href="https://caydenodegard.com" target="_blank"><i class="fa-brands fa-twitter"></i>my website</a></li>
-		<li class="_social-link"><a href="https://github.com/kdqn/portfolio" target="_blank"><i class="fa-brands fa-github"></i>my github</a></li>
-		<li class="_social-link"><a href="mailto:cayden.odegard@gmail.com" target="_blank"><i class="fa-solid fa-at"></i>email me</a></li>
+		<li class="_social-link"><a href="https://www.linkedin.com/in/caydenodegard/" target="_blank"><i class="fa-brands fa-twitter"></i>LinkedIn</a></li>
+		<li class="_social-link"><a href="https://github.com/kdqn/portfolio" target="_blank"><i class="fa-brands fa-github"></i>GitHub</a></li>
+		<li class="_social-link"><a href="mailto:cayden.odegard@gmail.com" target="_blank"><i class="fa-solid fa-at"></i>Contact Me</a></li>
 	</ul>
 </aside>

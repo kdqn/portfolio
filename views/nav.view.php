@@ -38,10 +38,10 @@ $nav = [
   'linktitle' => 'Experience',
   'linkname' => URL_ROOT . 'pages/experience.php',
   ],
-  [
-  'linktitle' => 'Contact',
-  'linkname' => URL_ROOT . 'pages/contact.php',
-  ],
+  // [
+  // 'linktitle' => 'Contact',
+  // 'linkname' => URL_ROOT . 'pages/contact.php',
+  // ],
   [
   'linktitle' => 'Login',
   'linkname' => URL_ROOT . 'pages/login.php',

@@ -71,7 +71,7 @@ table, th, td {
 }
 
 /* Footer CSS */
-/* footer {
+footer {
     height: 60px;
     width: 100%;
     bottom: 0;
@@ -80,7 +80,7 @@ table, th, td {
     background-color: var(--secondary-color);
     position: fixed;
     z-index: 0;
-} */
+}
 
 /* Div CSS */
 div {

@@ -132,7 +132,7 @@ h2::after {
     top: 45%;
     left: 50%;
     transform: translate(-50%, -40%);
-    background: rgbrgb(40, 2, 179);
+    background: rgb(40, 2, 179);
     transition: all 300ms ease;
     border-radius: 200px;
 }

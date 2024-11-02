@@ -5,10 +5,16 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: rgb(0, 0, 0);
     --accentcolor: rgb(40, 2, 179);
+    --primary: rgb(1, 57, 94);
+    --secondary: hotpink;
+    --textcolor: rgb(0,0,0);
+    --tablebkg: rgba(1, 57, 94, 0.541);
+    --pagebkg: rgb(236, 226, 226);
+    --imgborder: rgb(231, 143, 27);
 }
 
 a {
-    color: rgb(40, 2, 179);
+    color: var(--accentcolor);
     text-decoration: none;
     font-weight: bold;
     text-align: center;
@@ -16,13 +22,13 @@ a {
 
 h1 {
     top: 0;    
-    color: rgb(0, 0, 0);
+    color: var(--textcolor);
 }
 
 
 /* Code Section CSS */
 .code {
-    color: rgbrgb(40, 2, 179);
+    color: var(--accentcolor);
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     font-size: 20px;
@@ -30,7 +36,7 @@ h1 {
 
 /* Projects Section CSS */
 table {
-    background-color: rgba(1, 57, 94, 0.541);
+    background-color: var(--tablebkg);
     padding: 20px;
     margin: 40px;
     width: 50%;
@@ -56,7 +62,7 @@ footer {
     padding-bottom: 0;
     text-align: center;
     display: block;
-    background-color: rgb(1, 57, 94);
+    background-color: var(--primary);
     position: fixed;
     margin-top: 30px;
     z-index: 0;
@@ -81,7 +87,7 @@ body {
     place-items: center;
     background: var(--bgcolor);
     color: rgb(160, 157, 157);
-    background-color: rgb(236, 226, 226);
+    background-color: var(--pagebkg);
     /* background: linear-gradient(360deg, #1cc7d0, #2ede98); */
     margin-left: 30px;
 }
@@ -132,7 +138,7 @@ h2::after {
     top: 45%;
     left: 50%;
     transform: translate(-50%, -40%);
-    background: rgb(40, 2, 179);
+    background: var(--accentcolor);
     transition: all 300ms ease;
     border-radius: 200px;
 }
@@ -149,15 +155,15 @@ h2:hover::after {
     top: 50%;
     transform: translatey(-50%);
     padding: 1em 0.5em 1em 1em;
-    background: rgb(1, 57, 94);
+    background: var(--primary);
     border-radius: 0.5em 0 0 0.5em;
-    box-shadow: -4px 0px 0px rgb(40, 2, 179);
+    box-shadow: -4px 0px 0px var(--accentcolor);
     transition: all 300ms ease;
     z-index: 0;
 }
 
 ._social-links:hover {
-    box-shadow: -8px 0px 20px rgb(46, 173, 167);
+    box-shadow: -8px 0px 20px var(--accentcolor);
     padding: 1em;
 }
 
@@ -175,17 +181,17 @@ h2:hover::after {
 }
 
 ._social-link a:visited {
-    color: rgb(0, 0, 0);
+    color: var(--textcolor);
 }
 
 ._social-link a:hover {
-    color: rgb(40, 2, 179);
+    color: var(--accentcolor);
     font-size: 1.75rem;
 }
 
 /* Hamburger Menu CSS */
 :root {
-    --bgcolor: rgb(0, 0, 0);
+    --bgcolor: var(--textcolor);
 }
 
 .wrapper{
@@ -215,7 +221,7 @@ h2:hover::after {
     border-radius: 50%;
     font-size: 20px;
     cursor: pointer;
-    background:rgb(1, 57, 94);
+    background:var(--primary);
     transition: all 0.3s ease-in-out;
 }
 
@@ -351,7 +357,7 @@ input[type="checkbox"]{
 img {
     --s: 180px; /* image size */
     --b: 5px; /* border thickness */
-    --c: rgb(231, 143, 27); /* border color */
+    --c: var(--imgborder) /* border color */
     --f: 1; /* initial scale */
   
     --_g: 50% / calc(100% / var(--f)) 100% no-repeat content-box;
@@ -403,7 +409,7 @@ img:hover {
 
   /*contact page CSS*/
 
-  .card {
+  /* .card {
     width: 70%;
     padding: 30px 90px 90px 90px;
     border: 6px solid rgba(0, 0, 0, 0.3);
@@ -515,4 +521,4 @@ img:hover {
     .card .row input[type="submit"] {
       width: 100%;
     }
-  }
+  } */

@@ -357,7 +357,7 @@ input[type="checkbox"]{
 img {
     --s: 180px; /* image size */
     --b: 5px; /* border thickness */
-    --c: var(--imgborder) /* border color */
+    --c: var(--imgborder); /* border color */
     --f: 1; /* initial scale */
   
     --_g: 50% / calc(100% / var(--f)) 100% no-repeat content-box;

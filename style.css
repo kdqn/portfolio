@@ -42,7 +42,7 @@ table {
     width: 50%;
     float: left;
     border-radius: 50px;
-    z-index: 0;
+    z-index: -1;
     position: relative;
     overflow: hidden;
 } 
@@ -160,7 +160,7 @@ h2:hover::after {
     border-radius: 0.5em 0 0 0.5em;
     box-shadow: -4px 0px 0px var(--accentcolor);
     transition: all 300ms ease;
-    z-index: 1;
+    z-index: 0;
 }
 
 ._social-links:hover {

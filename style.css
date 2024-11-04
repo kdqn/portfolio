@@ -44,6 +44,7 @@ table {
     border-radius: 50px;
     z-index: 0;
     position: relative;
+    overflow: hidden;
 } 
 th, td{
     padding: 15px;

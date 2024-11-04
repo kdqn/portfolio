@@ -127,7 +127,7 @@ h2::before {
 h2:hover::before {
     top: -4px;
     left: 0px;    
-    color: cyan;
+    color: var(--secondary);
 }
 
 h2::after {
@@ -175,7 +175,7 @@ h2:hover::after {
 }
 
 ._social-link a {
-    color: #000000;
+    color: var(--textcolor);
     font-size: 1.5rem;
     transition: all 200ms ease;
 }

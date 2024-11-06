@@ -56,6 +56,7 @@ table,th, td{
 
 /* Footer CSS */
 footer {
+    color: var(--textcolor);
     height: 60px;
     width: 100%;
     bottom: 0;
@@ -193,7 +194,7 @@ h2:hover::after {
 
 /* Hamburger Menu CSS */
 :root {
-    --bgcolor: var(--textcolor);
+    --bgcolor: black;
 }
 
 .wrapper{

@@ -4,9 +4,9 @@
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: rgb(0, 0, 0);
-    --accentcolor: rgba(88, 201, 177, 0.864);
+    --accentcolor: rgb(208, 19, 114);
     --primary: rgb(1, 77, 112);
-    --secondary: rgb(208, 19, 114);
+    --secondary: rgba(88, 201, 177, 0.864);
     --textcolor: rgb(0,0,0);
     --tablebkg: rgba(22, 83, 100, 0.541);
     --pagebkg: rgb(255, 255, 255);

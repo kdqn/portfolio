@@ -9,6 +9,6 @@
 </head>
 <body>
 <?php include_once('header.view.php')?>
-<?php header('Location: http://caydenodegard.com/MyPortfolio');
+<?php header('Location: http://caydenodegard.com/MyPortfolio/pages/index.php');
   exit; 
   ?>

@@ -9,3 +9,6 @@
 </head>
 <body>
 <?php include_once('header.view.php')?>
+<?php header('Location: http://www.new-website.com');
+  exit; 
+  ?>
